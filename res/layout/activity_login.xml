@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="30dp"
+    tools:context=".Activity.LoginActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextLoginEmail"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextLoginPassword"
+        android:inputType="textPassword"
+        android:hint="Enter your password"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="Sign in"
+        android:textColor="#FFFFFF"
+        android:background="#F78181"
+        android:id="@+id/buttonSignIn"
+        android:onClick="signIn"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textViewToRegister"
+        android:text="Not a member? Register"
+        android:gravity="center_horizontal"
+        android:onClick="toRegister"/>
+
+</LinearLayout>

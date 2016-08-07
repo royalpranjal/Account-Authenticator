@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    tools:context=".Activity.RegisterActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextRegisterName"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextRegisterEmail"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/editTextRegisterPassword"
+        android:inputType="textPassword"
+        android:hint="Enter your password"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:background="#0489B1"
+        android:id="@+id/buttonRegister"
+        android:onClick="register"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textViewToSignIn"
+        android:text="Already a member? Sign in"
+        android:gravity="center_horizontal"
+        android:onClick="toSignIn"/>
+
+</LinearLayout>
